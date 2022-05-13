@@ -1,0 +1,98 @@
+.Signin-container {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  color: #ffffff;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.home-button{
+  border: #ffffff 1px solid;
+  border-radius: 6px;
+  height: 5vh;
+  width: 300px;
+  position: fixed;
+  top: 50px;
+  right: 50px;
+}
+
+.Signin-form {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.Signin-input {
+  width: 300px;
+  background-color : transparent !important;
+  border: #ffffff 1px solid;
+  color: #ffffffff;
+}
+
+.Signin-input:focus {
+  box-shadow: none;
+  outline: 0;
+  background-color : transparent !important;
+  border: #ffffff 1px solid;
+  color: #ffffffff;
+
+}
+
+.Signin-input::placeholder{
+  color: #ffffff55;
+}
+
+.Signin-btn {
+  width: 100px;
+  background: #ffffff;
+  color: #000000;
+}
+
+.centralize {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .Signin-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .Signin-form {
+    /* width: 90%; */
+    height: 200px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+  }
+
+  .centralize {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

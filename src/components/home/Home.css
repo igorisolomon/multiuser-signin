@@ -1,0 +1,27 @@
+.Home {
+  height: 100vh;
+  background: url("../../assets/arrow.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+a.navbar-brand{
+  color: #000000;
+  font-weight: 500;
+}
+
+.Home-container {
+  height: calc(100vh - 56px);
+  display: flex;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+}
+
+@media (max-width:800px) {
+  .Home {
+    height: 100vh;
+    background: none;
+  }
+}

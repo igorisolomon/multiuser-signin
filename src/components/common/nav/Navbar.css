@@ -1,0 +1,12 @@
+.avatar-button{
+    border: none;
+    border-radius: 50%;
+}
+
+.currentUser{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
