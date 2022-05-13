@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Avatar from "@mui/material/Avatar";
 import Menu from "@mui/material/Menu";
@@ -7,7 +7,7 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import Divider from "@mui/material/Divider";
 import PersonAdd from "@mui/icons-material/PersonAdd";
 import Logout from "@mui/icons-material/Logout";
-import { getUserData, logout } from "../../../services/authService";
+import { logout } from "../../../services/authService";
 
 import "./Navbar.css";
 
@@ -43,9 +43,9 @@ const Navbar = ({ users, currentUserKey }) => {
     return otherUsers;
   };
 
-  const capitalize = (str) =>{
+  const capitalize = (str) => {
     return str[0].toUpperCase() + str.substring(1);
-  }
+  };
 
   return (
     <>

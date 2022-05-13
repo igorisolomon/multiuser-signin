@@ -14,6 +14,7 @@ function App() {
         path="me"
         element={user ? <Home /> : <Navigate to="/" replace />}
       />
+      <Route path="*" element={user ? <Home /> : <Navigate to="/" replace />} />
     </Routes>
   );
 }
